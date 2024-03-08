@@ -76,7 +76,7 @@ class Orden{
     mostrarOrden(){
         let productosOrden = "";
         for (let producto of this._productos) {
-            productosOrden +='\n{' + producto.toSring() + '} ';
+            productosOrden +='\n{' + producto.toString() + '} ';
         }
         console.log(`Orden:${this._idOrden} Total: ${this.calcularTotal()}, Productos: ${productosOrden}`);
     }
